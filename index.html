@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quitanda do Davi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Frutas disponíveis</h1>
+
+  <!-- Formulário para adicionar nova fruta -->
+  <form id="addFruitForm">
+    <h2>Adicionar nova fruta</h2>
+    <input type="text" id="name" placeholder="Nome" required>
+    <input type="number" id="price" placeholder="Preço" step="0.01" required>
+    <input type="number" id="quantity" placeholder="Quantidade" required>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <!-- Lista de frutas -->
+  <div id="fruitList"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
