@@ -6,10 +6,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Frutas disponíveis</h1>
+  <h1 class="container" >Frutas disponíveis</h1>
 
   <!-- Formulário para adicionar nova fruta -->
-  <form id="addFruitForm">
+  <form id="addFruitForm" class="container">
     <h2>Adicionar nova fruta</h2>
     <input type="text" id="name" placeholder="Nome" required>
     <input type="number" id="price" placeholder="Preço" step="0.01" required>
@@ -18,7 +18,21 @@
   </form>
 
   <!-- Lista de frutas -->
-  <div id="fruitList"></div>
+  <div id="fruitList" class="container"></div>
+
+
+  <!-- Botões de paginação -->
+<div id="pagination" class="container">
+  <div class="pagination-buttons">
+    <button id="prevPage">Anterior</button>
+    <span id="pageInfo"></span>
+    <button id="nextPage">Próxima</button>
+  </div>
+  <div class="goto-container">
+    <input type="number" id="goToPage" min="1" placeholder="Nº da página">
+    <button id="goPageBtn">Ir</button>
+  </div>
+</div>
 
   <script src="app.js"></script>
 </body>
